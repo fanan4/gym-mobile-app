@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    >
+    <TextView
+        android:id="@+id/EnterDet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Details"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Training Name"
+        android:id="@+id/TrainingName"
+        android:layout_below="@+id/EnterDet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/howMuch"
+         android:text="how much do you have in mind"
+         android:layout_below="@+id/TrainingName"
+         android:layout_marginTop="15dp"
+         />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Minutes"
+        android:id="@+id/minutes"
+        android:layout_below="@+id/howMuch"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Select"
+        android:text="Select the day"
+        android:layout_below="@+id/minutes"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="15dp"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/Select"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:entries="@array/Days"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/Add"
+            />
+        <Button
+            android:id="@+id/Dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dismiss"
+            android:layout_toRightOf="@+id/Add"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>
